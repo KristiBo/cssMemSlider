@@ -12,36 +12,48 @@
   <title>Mem-Slider</title>
 </head>
 <body>
-  <div class="container">    
+  <div class="container">
     <div class="slider">
-      <input type="radio" name="radio" id="ir1">
+      <input type="radio" name="radio" id="ir1" checked>
       <input type="radio" name="radio" id="ir2">
       <input type="radio" name="radio" id="ir3">
       <input type="radio" name="radio" id="ir4">
       <div class="slides">
-        <div class="slides__img ir1 slides__img_1"></div>
-        <div class="slides__img ir2 slides__img_2"></div>
-        <div class="slides__img ir3 slides__img_3"></div>
-        <div class="slides__img ir4 slides__img_4"></div>
+        <div class="slides__container">
+          <div class="slides__img">
+            <img src="./assets/img/first.jpg" alt="mem">
+          </div>
+          <div class="slides__img">
+            <img src="./assets/img/first.jpg" alt="mem">
+          </div>
+          <div class="slides__img">
+            <img src="./assets/img/first.jpg" alt="mem">
+          </div>
+          <div class="slides__img">
+            <img src="./assets/img/first.jpg" alt="mem">
+          </div>
+        </div>
       </div>
       <div class="description">
-        <div class="description__text ir1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-        <div class="description__text ir2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-        <div class="description__text ir3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-        <div class="description__text ir4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="description__container">
+          <div class="description__text">Lorem ipsum dolor sit amet </div>
+          <div class="description__text">Lorem amet consectetur .</div>
+          <div class="description__text">Lorem ipsum consectetur .</div>
+          <div class="description__text">Lorem dolor sit amet .</div>
+        </div>
       </div>
       <div class="controls">
         <label for="ir1" class="controls__btn">
-          <div class="controls__inside"></div>
+          <div class="controls__inside ir1"></div>
         </label>
         <label for="ir2" class="controls__btn">
-          <div class="controls__inside"></div>
+          <div class="controls__inside ir2"></div>
         </label>
         <label for="ir3" class="controls__btn">
-          <div class="controls__inside"></div>
+          <div class="controls__inside ir3"></div>
         </label>
         <label for="ir4" class="controls__btn">
-          <div class="controls__inside"></div>
+          <div class="controls__inside ir4"></div>
         </label>
       </div>
     </div>
