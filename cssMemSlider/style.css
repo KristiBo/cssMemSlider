@@ -5,5 +5,139 @@
 }
 
 body {
+  margin: 0;
+  height: 100vh;
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 62.5%;
+  background-image: url("./assets/img/bcg.jpg");
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+  display: grid;
+  grid-template-areas: "slides slides"
+    "description controls";
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+}
+
+input {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  grid-area: slides;
+  width: 400%;
+  height: 100%;
+}
+
+.slides__img {
+  width: 25%;
+}
+
+.slides__img_1 {
+  background: no-repeat center/100% url("./assets/img/first.jpg");
+}
+
+.slides__img_2 {
+  background-color: blueviolet;
+}
+
+.slides__img_3 {
+  background-color: brown;
+}
+
+.slides__img_4 {
+  background-color: blue;
+}
+
+.description {
+  display: flex;
+  grid-area: description;
+  align-items: center;
+  width: 470%;
+  font-size: 2rem;
+}
+
+.description__text {
+  width: 25%;
+}
+
+.controls {
+  display: flex;
+  grid-area: controls;
+  align-items: center;
+  gap: 1rem;
+}
+
+.controls__btn {
+  height: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.controls__inside {
+  width: 2rem;
+  height: 1rem;
+  background-color: black;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.controls__btn:hover .controls__inside {
+  background-color: aliceblue;
+}
+
+.controls__btn:active .controls__inside {
+  background-color: rgb(175, 182, 189);
+}
+
+#ir1:checked~.slides>.ir1,
+#ir2:checked~.slides>.ir2,
+#ir3:checked~.slides>.ir3,
+#ir4:checked~.slides>.ir4 {
+  transition: all 0.5s ease;
+}
+
+#ir2:checked~.slides>.ir2 {
+  margin-left: -25%;
+}
+
+#ir3:checked~.slides>.ir3 {
+  margin-left: -50%;
+}
+
+#ir4:checked~.slides>.ir4 {
+  margin-left: -75%;
+}
+
+#ir1:checked~.description>.ir1,
+#ir2:checked~.description>.ir2,
+#ir3:checked~.description>.ir3,
+#ir4:checked~.description>.ir4 {
+  transition: all 0.5s ease;
+}
+
+#ir2:checked~.description>.ir2 {
+  margin-left: -25%;
+}
+
+#ir3:checked~.description>.ir3 {
+  margin-left: -50%;
+}
+
+#ir4:checked~.description>.ir4 {
+  margin-left: -75%;
 }
