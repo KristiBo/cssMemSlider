@@ -169,7 +169,7 @@ img {
 
 @media screen and (max-width: 590px)  {
   .container {
-    height: 90%;
+    height: 80%;
   }
 
   .slider {
@@ -218,6 +218,6 @@ img {
     width: 70vw;
     padding-bottom: 2vh;
     font-size: 1rem;
-    line-height: 0.5rem;
+    line-height: 0.7rem;
   }
 }
